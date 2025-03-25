@@ -187,15 +187,15 @@ body {
 }
 
 .social-icon--facebook {
-  background-image: url('facebook.svg');
+  background-image: url('./facebook.svg');
 }
 
 .social-icon--instagram {
-  background-image: url('instagram.svg');
+  background-image: url('./instagram.svg');
 }
 
 .social-icon--twitter {
-  background-image: url('twitter.svg');
+  background-image: url('./twitter.svg');
 }
 
 @media (max-width: 768px) {
