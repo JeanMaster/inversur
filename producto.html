@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle del producto - Tienda Virtual">
+    <title>Detalle del Producto - Tienda Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="/assets/img/logo-trans.png" alt="Logo de la tienda" width="120" height="40">
+        </div>
+        <nav class="nav">
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+            <label for="nav-toggle" class="nav__toggle">
+                <span class="nav__icon"></span>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                <li class="nav__item nav__item--login">
+                    <a href="#" class="nav__link nav__link--login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="product-detail">
+            <div class="product-detail__gallery">
+                <figure class="product-detail__main-image">
+                    <img src="/assets/img/producto1.jpg" alt="Imagen principal del producto" id="mainImage">
+                </figure>
+                <div class="product-detail__thumbnails">
+                    <img src="/assets/img/producto1.jpg" alt="Miniatura 1" class="thumbnail active">
+                    <img src="/assets/img/producto1-2.jpg" alt="Miniatura 2" class="thumbnail">
+                    <img src="/assets/img/producto1-3.jpg" alt="Miniatura 3" class="thumbnail">
+                    <img src="/assets/img/producto1-4.jpg" alt="Miniatura 4" class="thumbnail">
+                </div>
+            </div>
+
+            <div class="product-detail__info">
+                <nav class="product-detail__breadcrumb">
+                    <a href="index.html">Inicio</a> > 
+                    <a href="#">Categoría</a> > 
+                    <span>Nombre del Producto</span>
+                </nav>
+
+                <h1 class="product-detail__title">Nombre del Producto</h1>
+                <div class="product-detail__rating">
+                    <span class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                    <span class="rating-count">(24 reseñas)</span>
+                </div>
+
+                <p class="product-detail__price">
+                    <span class="price-current">$199.99</span>
+                    <span class="price-original">$249.99</span>
+                    <span class="price-discount">20% OFF</span>
+                </p>
+
+                <div class="product-detail__description">
+                    <h2>Descripción del Producto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div class="product-detail__features">
+                    <h2>Características Principales</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Característica 1</li>
+                        <li><i class="fas fa-check"></i> Característica 2</li>
+                        <li><i class="fas fa-check"></i> Característica 3</li>
+                        <li><i class="fas fa-check"></i> Característica 4</li>
+                    </ul>
+                </div>
+
+                <div class="product-detail__actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="btn btn--primary btn--large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Agregar al Carrito
+                    </button>
+                    <button class="btn btn--secondary btn--large">
+                        <i class="far fa-heart"></i>
+                        Agregar a Favoritos
+                    </button>
+                </div>
+
+                <div class="product-detail__shipping">
+                    <div class="shipping-info">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío gratis a todo el país</span>
+                    </div>
+                    <div class="shipping-info">
+                        <i class="fas fa-undo"></i>
+                        <span>30 días para devoluciones</span>
+                    </div>
+                    <div class="shipping-info">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Garantía oficial de 12 meses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="related-products">
+            <h2>Productos Relacionados</h2>
+            <div class="product-grid">
+                <!-- Aquí irían 3-4 tarjetas de productos relacionados -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <h4 class="footer__title">Acerca de</h4>
+            <p class="footer__text">Tienda virtual especializada en productos de alta calidad con garantía oficial.</p>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__title">Contacto</h4>
+            <ul class="footer__list">
+                <li class="footer__item">📞 +569 1234 5678</li>
+                <li class="footer__item">📧 contacto@tienda.com</li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__title">Redes</h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon social-icon--facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon social-icon--instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon social-icon--twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
