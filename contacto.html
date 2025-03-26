@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - Inversur, repuestos para tu hogar">
+    <title>Contacto - Inversur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/img/logo-trans.png" alt="Logo de la tienda" width="120" height="40">
+        </div>
+        <nav class="nav">
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+            <label for="nav-toggle" class="nav__toggle">
+                <span class="nav__icon"></span>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item nav__item--login">
+                    <a href="#" class="nav__link nav__link--login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contáctanos</h1>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Sur de Valencia, Venezuela</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+58 0412 4505646</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>invermastersur@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Sábado: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envíanos un mensaje</h2>
+                <form action="mailto:invermastersur@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <h4 class="footer__title">Acerca de</h4>
+            <p class="footer__text">Todo para tu hogar, somos tienda ubicada en el sur de valencia, con mas de 10 años de experiencia en el mercado.</p>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__title">Contacto</h4>
+            <ul class="footer__list">
+                <li class="footer__item">📞 +58 0412 4505646</li>
+                <li class="footer__item">📧 invermastersur@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__title">Redes</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100063557943485" class="social-icon social-icon--facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/inver_sur/" class="social-icon social-icon--instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon social-icon--twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
