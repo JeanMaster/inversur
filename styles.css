@@ -292,9 +292,11 @@ h2::before {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-card {
@@ -409,6 +411,7 @@ h2::before {
   
   .product-grid {
       grid-template-columns: 1fr;
+      padding: var(--spacing-md);
   }
   
   .footer {
